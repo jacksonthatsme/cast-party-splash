@@ -14,8 +14,31 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  width: 100%;
   min-height: 100vh;
   text-align: center;
   padding: 2rem;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  scale: clamp(1, calc(1 + 0.3 * tan(atan2(100vw - 600px, 600px))), 1.3);
+}
+
+.button {
+  background: #fff;
+  color: #111;
+  padding: 1rem 2rem;
+  border-radius: 32px;
+  font-size: 12px;
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: flex-end;
 }
