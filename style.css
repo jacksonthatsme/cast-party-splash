@@ -16,7 +16,8 @@ main {
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  min-height: 100vh;
+  height: 100svh;
+  height: 100dvh;
   text-align: center;
   padding: 2rem;
 }
@@ -33,7 +34,9 @@ main {
 }
 
 .button {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   color: #111;
   padding: 1rem 2rem;
   border-radius: 32px;
